@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductora Pública Inglés-Español</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html" aria-label="Volver a la página principal">
+            <img src="./recursos/imagenes/logo.avif" alt="Logo pagina">
+        </a>
+        <H1>Traductora Pública Inglés-Español</H1>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+        <h2>Aprende ingles de manera divertida</h2>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <h3>Escribinos</h3>
+        <p>
+            Solicita tu presupuesto sin cargo. Por favor, completa el siguiente
+            formulario detallando el tipo de documento y el volumen estimado de palabras. Te
+            responderé con una cotización detallada en un plazo máximo de 24 horas hábiles.
+        </p>
+        <form action="./contacto.html" method="post">
+            <label for="id_nombre">Nombre completo</label>
+            <input type="text" name="nombre" id="id_nombre">
+            
+            
+            <label for="id_correo">Correo electronico</label>
+            <input type="text" name="Correo electronico" id="id_telefono">
+           
+           
+            <label for="id_Tipo de traducción requerida">Tipo de traducción requeridas</label>
+            <select name="Tipo de traducción requerida" id="id_Tipo de traducción requerida">
+                <option value="L">Legal</option>
+                <option value="C">Corporativa</option>
+                <option value="Lit">Literaria</option>
+                <option value="O">Otra</option>
+            </select>
+
+            <label for="id_CantidadPalabras">Cantidad de palabras</label>
+            <input type="text" name="Cantidad de palabras" id="id_CantidadPalabras">
+            <label for="id_Detalles">Detalles adicionales del documento o consulta</label>
+            <textarea name="Detalles" id="id_Detalles"></textarea>
+       
+        
+            <button type="reset">
+                Limpiar
+            </button>
+
+            <button type="submit">
+                Enviar
+         </button>
+
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://instagram.com/@TraductoraElenaMorales"  target="_blank">
+                    @TraductoraElenaMorales
+                </a>
+            </li>
+            <li>
+                Av. Colón 1234, Córdoba, Argentina
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

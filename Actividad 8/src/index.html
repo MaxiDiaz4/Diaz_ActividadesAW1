@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+<body>
+    <!-- Se cambia el <div> superior por <header> para dar valor semántico al encabezado -->
+    <header class="bloque-encabezado">
+        <a href="index.html" aria-label="Volver al inicio">
+            <!-- El atributo 'alt' es crucial para la accesibilidad (lectores de pantalla) y para el SEO si la imagen no carga -->
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Logotipo de Retiro Sustentable">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="bloque-principal"> 
+        <h1>Catálogo de Cabañas</h1>
+        <p>Bienvenido a nuestro catálogo. Nuestras cuatro cabañas totalmente equipadas al pie de la montaña te esperan.</p>
+        
+        <div class="contenedor-cabanas">
+            <!-- Usamos <article> porque cada cabaña es un contenido independiente y autocontenido -->
+            <article class="tarjeta-cabana">
+                <h2>Cabaña 1: El Hornero</h2>
+                <img src="./recursos/imagenes/modelo1.webp" alt="Fachada de la cabaña El Hornero">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum viverra.</p>
+                <p class="precio">Precio por día: $45.000</p>
+                <a href="reservas.html" class="btn-reserva">Reservar esta cabaña</a>
+            </article>
+
+            <article class="tarjeta-cabana">
+                <h2>Cabaña 2: El Cóndor</h2>
+                <img src="./recursos/imagenes/modelo2.webp" alt="Fachada de la cabaña El Cóndor">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id felis non massa.</p>
+                <p class="precio">Precio por día: $50.000</p>
+                <a href="reservas.html" class="btn-reserva">Reservar esta cabaña</a>
+            </article>
+
+            <article class="tarjeta-cabana">
+                <h2>Cabaña 3: La Liebre</h2>
+                <img src="./recursos/imagenes/modelo3.webp" alt="Fachada de la cabaña La Liebre">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sodales odio.</p>
+                <p class="precio">Precio por día: $40.000</p>
+                <a href="reservas.html" class="btn-reserva">Reservar esta cabaña</a>
+            </article>
+
+            <article class="tarjeta-cabana">
+                <h2>Cabaña 4: El Zorro</h2>
+                <img src="./recursos/imagenes/modelo4.webp" alt="Fachada de la cabaña El Zorro">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus auctor arcu.</p>
+                <p class="precio">Precio por día: $55.000</p>
+                <a href="reservas.html" class="btn-reserva">Reservar esta cabaña</a>
+            </article>
+        </div>
+    </main>
+
+    <!-- Se cambia el <div> inferior por <footer> para denotar el pie de página semánticamente -->
+    <footer class="bloque-pie">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* 
+  Primero se declaran los selectores universales y de TIPO (menor especificidad). 
+  Luego, en la parte inferior, los selectores de CLASE (mayor especificidad). 
+*/
+
+/* 1. SELECTORES UNIVERSALES Y RESET
+    */
+* {
+    margin: 0;
+    padding: 0;
+    /* 
+      Verificación del modelo de caja alternativo. 
+      box-sizing: border-box asegura que los padding y border se calculen dentro del ancho total del elemento, 
+      evitando que las cajas se desborden de su contenedor. 
+    */
+    box-sizing: border-box;
+}
+
+/* 
+   2. SELECTORES DE TIPO (Etiquetas HTML)
+    */
+@font-face {
+    font-family: 'Sora';
+    src: url('./fuentes/Sora-Regular.ttf');
+}
+
+/* 
+  Regla para el elemento raíz (html). 
+  Se establece la tipografía solicitada y el tamaño de fuente general de 16px para todo el documento. 
+*/
+html {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px; 
+    line-height: 1.5;
+    background-color: #f4f6f7;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/* 
+   3. SELECTORES DE CLASE (Bloques de Layout)
+    */
+
+/* 
+  Clase para el bloque layout 1: Encabezado. 
+  Se utiliza 'display: flex'. Esto cambia el comportamiento externo del elemento permitiendo separar fácilmente logo y menú). 
+*/
+.bloque-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50; /* El fondo es #2c3e50, mismo color que el pie */
+    color: #ffffff;
+    padding: 15px 30px;
+}
+
+.bloque-encabezado nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.bloque-encabezado nav a {
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+/* Clase para el bloque layout 2: Principal. */
+.bloque-principal {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 60vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 
+  Clase para el bloque layout 3: Pie. 
+  Se verifica que el fondo tiene el mismo código de color (#2c3e50) que el encabezado, cumpliendo la consigna. 
+*/
+.bloque-pie {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* 
+   4. CLASES DE COMPONENTES INTERNOS
+    */
+.contenedor-cabanas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tarjeta-cabana {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin: 15px 0;
+}
+
+.btn-reserva {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
